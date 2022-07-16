@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace ResponsiUASPemrog
+namespace ProjectMahasiswa
 {
-    internal class Mahasiswa
+    public class Mahasiswa
     {
+        // PERINTAH: lengkapi property class mahasiswa, sesuai petunjuk soal
+        public string NIM { get; set; }
+        public string Name { get; set; }
+        public string Gender { get; set; }
+        public string Ipk { get; set; }
     }
 }

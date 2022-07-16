@@ -61,9 +61,9 @@ namespace ProjectMahasiswa
             Mahasiswa Mahasiswa = new Mahasiswa();
 
             Console.Write("NIM: ");
-            Mahasiswa.Nim = Console.ReadLine();
+            Mahasiswa.NIM = Console.ReadLine();
             Console.Write("Nama: ");
-            Mahasiswa.Nama = Console.ReadLine();
+            Mahasiswa.Name = Console.ReadLine();
             Console.Write("Jenis Kelamin [L/P] : ");
             Mahasiswa.Gender = Console.ReadLine();
             if (Mahasiswa.Gender == "L")
@@ -91,11 +91,10 @@ namespace ProjectMahasiswa
             Console.WriteLine("Data Mahasiswa\n");
             int no = 1;
 
-            Console.WriteLine("No\tNIM\tNama \tJenis Kelamin\tIPK");
             foreach (Mahasiswa mahasiswa in daftarMahasiswa)
             {
 
-                Console.WriteLine("{0}.\t{1}\t{2} \t{3}\t{4}", no, mahasiswa.Nim, mahasiswa.Nama, mahasiswa.Gender, mahasiswa.Ipk);
+                Console.WriteLine("{0}. {1}, {2}, {3}, {4}", no, mahasiswa.NIM, mahasiswa.Name, mahasiswa.Gender, mahasiswa.Ipk);
                 no++;
             }
 
